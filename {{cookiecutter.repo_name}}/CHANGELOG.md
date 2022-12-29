@@ -18,5 +18,5 @@ Types of changes are:
 
 - Initial source code
 
-[Unreleased]: https://github.com/radeklat/settings-doc/compare/{{cookiecutter.initial_version}}...HEAD
-[{{cookiecutter.initial_version}}]: https://github.com/radeklat/settings-doc/compare/initial...{{cookiecutter.initial_version}}
+[Unreleased]: https://github.com/radeklat/{{cookiecutter.repo_name}}/compare/{{cookiecutter.initial_version}}...HEAD
+[{{cookiecutter.initial_version}}]: https://github.com/radeklat/{{cookiecutter.repo_name}}/compare/initial...{{cookiecutter.initial_version}}
