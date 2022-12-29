@@ -33,8 +33,11 @@
    git push --tags
    ```
 8. (Optional) If you opted in for the CircleCI automation:
-   - visit https://app.circleci.com/projects
-   - choose the appropriate maintainer (if multiple present)
-   - find the newly created project
-   - click on "Set Up Project"
-   - set it up from the "main" branch
+   - Visit https://app.circleci.com/projects
+   - Choose the appropriate maintainer (if multiple present).
+   - Find the newly created project.
+   - Click on "Set Up Project".
+   - Set it up from the "main" branch.
+   - If you opted in for Codecov, add `CODECOV_TOKEN` in "Project Settings / Environment Variables". You can get it in codecov.io.
+   - If you opted in for Pypi hosting, in "Organisation Settings / Contexts", create a context `pypi_upload` with a variable named `PYPI_API_TOKEN`, which will contain your upload token from pypi.org.
+   - In "Organisation Settings / Contexts", create a context `github` with a variable named `GITHUB_TOKEN`, which will contain your [Github Personal Access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) for creating releases.

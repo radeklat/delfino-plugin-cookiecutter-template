@@ -175,7 +175,7 @@ workflows:
           requires:
             - test
       - publish:
-          name: Publish{%- if cookiecutter.hosted_on_pypi == "yes" -%} to Pypi
+          name: Publish{%- if cookiecutter.hosted_on_pypi == "yes" %} to Pypi
           context: pypi_upload
           {% endif %}
           requires:
@@ -187,7 +187,7 @@ workflows:
           context:
             - github
           requires:
-            - Publish{%- if cookiecutter.hosted_on_pypi == "yes" -%} to Pypi{%- endif -%}
+            - Publish{%- if cookiecutter.hosted_on_pypi == "yes" %} to Pypi{%- endif %}
           filters:
             branches:
               only: << pipeline.parameters.git_trunk_branch >>

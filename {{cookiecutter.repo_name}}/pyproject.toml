@@ -21,9 +21,9 @@ classifiers = [
         {%- set min_version = cookiecutter.minimum_supported_python_version.split('.') | map('int') | list %}
         {%- set max_version = cookiecutter.maximum_supported_python_version.split('.') | map('int') | list %}
             {%- if version_list >= min_version and version_list <= max_version -%}
-    "Programming Language :: Python :: {{- version }}",
+    "Programming Language :: Python :: {{ version }}",
         {%- endif %}
-    {%- endfor %}
+    {% endfor -%}
     "Topic :: Software Development",
     "Topic :: Utilities",
 ]
