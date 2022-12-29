@@ -32,3 +32,9 @@
    ```shell
    git push --tags
    ```
+8. (Optional) If you opted in for the CircleCI automation:
+   - visit https://app.circleci.com/projects
+   - choose the appropriate maintainer (if multiple present)
+   - find the newly created project
+   - click on "Set Up Project"
+   - set it up from the "main" branch
