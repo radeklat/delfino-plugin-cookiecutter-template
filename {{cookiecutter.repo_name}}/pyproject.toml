@@ -95,7 +95,8 @@ follow_imports = "silent"
 [[tool.mypy.overrides]]
 # Source code dependencies
 module = [
-    "delfino.*"
+    "delfino.*",
+    {% if cookiecutter.delfino_core_enabled == "yes" %}"delfino_core.*",{% endif %}
 ]
 ignore_missing_imports = true
 
